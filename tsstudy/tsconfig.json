@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "removeComments": true,
+    "module":"amd"
+  },
+  "exclude": [
+     "node_modules",
+     "typings"
+   ]
+}

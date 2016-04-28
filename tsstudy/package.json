@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "gulp-typescript": "^2.13.0"
+  },
+  "dependencies": {
+    "merge2": "^1.0.2"
   }
 }
