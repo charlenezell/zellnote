@@ -156,6 +156,6 @@ define("NamedModule", ["require", "exports"], function (require, exports) {
         function f2(_a) {
             var _b = _a.a, a = _b === void 0 ? 1 : _b, _c = _a.b, b = _c === void 0 ? 2 : _c;
         }
-        f2({});
+        f2({ a: 5 });
     }
 });

@@ -1,0 +1,561 @@
+[{
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么娇羞可爱，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "笨蛋测验召唤兽"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151814233.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "木下秀吉"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "“秀吉的性别就是秀吉”！虽然这几年越来越多秀吉属性的物种，但是TA的地位依然不可撼动！在男生女生当中都极受欢迎，连续两年当上准燃王，秀吉的实力可不是盖的喔！"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10057.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10057"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "弹丸轮舞"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151398483.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "不二咲千寻"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "如果不是真相出来，压根不知道千寻是女孩子！小小的身材让人不禁联想到小动物，个性温顺可爱，被蚊子叮咬时，因为“蚊子也是活着的生命”所以不打死它，这样的性格俨然真女子啊~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/12032.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "12032"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么傲娇不饶人，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "黑执事"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img3.a0bi.com/upload/old/web/1377151903424.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "夏尔"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "夏尔的女装虽然只在TV版出现过一话，但因为扮相超美所以大受好评！可爱的粉色洋装，无法接受此屈辱而脸红的表情，至今深深印记在漫迷的心！这么傲娇强横的性格不是合我们的意吗？"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/35.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "35"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "会长是女仆大人"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151370854.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "兵藤葵"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "喜欢男扮女装，穿着漂亮的衣服，对可爱的东西有执着的爱，更擅长裁缝，这让女生情何以堪【捂脸】~傲娇、女王，却偏偏是个美少女偶像！虽然十分可爱（♀）也是一个不折不扣的正太哦~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/4.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "4"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么擅长料理，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "守护甜心"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img3.a0bi.com/upload/old/web/1377151846774.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "藤咲凪彦"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "性格温柔，长相甜美，出身舞蹈世家，擅长家政、做点心，同时体育超棒，篮球更是一流，真是“出得了厅堂，入得了厨房，扮得了软妹，做得了真汉子”啊！遇到这样的男孩纸就（qu）了吧~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/2.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "2"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "这个是僵尸吗？"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151944209.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "相川步"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "史上第一个男生版魔装少女，在变身成魔装少女时，力量发挥越多衣服会变得越可爱！照顾着几个蹭饭吃的女生，怎能不做得一手好料理呢？于是，姑且把相川步也纳入“可爱”男孩纸行列！"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10319.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10319"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么天真无邪，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "潜行吧！奈亚子"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151591656.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "哈斯塔"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "外表娇小，看似少女的可爱少年，并没有刻意打扮成女生，却比女生更可爱，天真无邪的眼神秒杀所有观众！对真寻（男）一见钟情并表白，这才是身心都准备做个女孩子啊有木有！！"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10050.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10050"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "夏目友人帐"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151929395.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "小狐狸"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "小孩子都很可爱，长了兽耳和兽尾的正太更可爱！纯真胆小的小狐狸，毅然走出大山，跌跌碰碰走到有着夏目气息的地方。这个天真傻气而又勇敢的小妖怪出场次数尽管不多，却一次次治愈着我们~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10070.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10070"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么美艳脱俗，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "机动战士高达OO"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151871797.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "提耶利亚·厄德"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "都说神谷娘娘擅长惊艳的中性角色，提耶利亚就是代表之一！俊美脱俗的容貌，冷静透彻的冰山性格，行为举止无不透露着高贵的气质！网上搜一下， N个问题是关于他的性别，真是魅力无法挡啊！"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/11738.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "11738"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "闪灵二人组"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img3.a0bi.com/upload/old/web/1377151454736.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "风鸟院花月"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "他是一个比女人还要美的倾城男子，生性优雅，看起来很柔弱，可是一生气就变得非常可怕，恰好是宅女们喜欢的“外表很娘，性格很爷们”的类型。被证实是男生的时候，可是伤过不少宅男的心喔~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10247.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10247"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么风华绝代，一定是男孩子！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "银魂"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151610957.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "假发子"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "长发飘逸，是个十分COOL的美男子【表面】~对，这只仅限于表面，实际上却是个全身散发着电波属性的白痴！曾经几次以女装示人，自称“假发子”，诶，风华绝代？他吗？这是恶搞吗？"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/10184.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "10184"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "进击的巨人"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151305051.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "利威尔兵长"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "兵长？怎么可能是兵长？明明阿明（阿尔敏）更像女生有没有？不过卢克还是被那惊艳的一踢给征服了，这么妖艳妩媚的动作一定是男孩子！兵长绝对是被制作组坑了一下，才不是我的错~大概~"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/series/video/11646.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "11646"
+        }]
+      }]
+    }]
+  }]
+}, {
+  "fromName": "articleContent",
+  "rule": "leibieDataModel:1,listDataModel:5",
+  "son": [{
+    "z_itemname": "leibieDataModel",
+    "field": [{
+      "z_name": "leibieDataModel",
+      "z_alis": "类别标题",
+      "value": ""
+    }]
+  }],
+  "container": [{
+    "rule": "leibieDataModel:1,listDataModel:5",
+    "son": [{
+      "z_itemname": "leibieDataModel",
+      "field": [{
+        "z_name": "leibieDataModel",
+        "z_alis": "类别标题",
+        "value": "这么无节操，一定是卢克！"
+      }]
+    }],
+    "container": [{
+      "rule": "leibieDataModel:1,listDataModel:5",
+      "son": [{
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "男版卢克大叔"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img3.a0bi.com/upload/old/web/1377151632702.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "男版卢克大叔"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "出没于百田动画和动漫圈的无节操大叔【自称】，时而卖萌一下，时而傲娇一下。这个可是官方版的卢克哟~很高端的哟~【我要怒刷存在感，大家投我一票吧】"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://v.100bt.com/"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "100"
+        }]
+      }, {
+        "z_itemname": "dongmanDataModel",
+        "field": [{
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片标题",
+          "value": "女版卢克萝莉"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "图片地址",
+          "value": "http://img2.a0bi.com/upload/old/web/1377151739695.jpg"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫标题",
+          "value": "女版卢克萝莉"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "动漫简介",
+          "value": "啊，关于这个，在动漫圈卢克的性别梗也已经被玩了N遍，我可是无数次被大家说“卢克萝莉了喂”，为了让大家脑补一下，这次真的画了女版的形象，官方版VS网友版，你更喜欢哪个呢？"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "播放连接",
+          "value": "http://qq.100bt.com/TTQInfo/18_0_0/0.html"
+        }, {
+          "z_name": "dongmanDataModel",
+          "z_alis": "pkID",
+          "value": "18"
+        }]
+      }]
+    }]
+  }]
+}]

@@ -193,6 +193,6 @@ f({
   function f2({a=1, b=2}): void {
       // ...
   }
-  f2({});
+  f2({a:5});
 }
 export{Person,getPersonInfo}
