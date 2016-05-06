@@ -195,4 +195,11 @@ f({
   }
   f2({a:5});
 }
-export{Person,getPersonInfo}
+
+class AppComponent {
+  title = 'Tour of Heroes';
+  hero = 'Windstorm';
+}
+
+export {Person, getPersonInfo, AppComponent}
+
