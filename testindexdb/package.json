@@ -1,0 +1,14 @@
+{
+  "name": "testindexdb",
+  "version": "1.0.0",
+  "description": "1. IndexedDB databases store key-value pairs. The values can be complex structured objects, and keys can be properties of those objects. You can create indexes that use any property of the objects for quick searching, as well as sorted enumeration.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.0"
+  }
+}
