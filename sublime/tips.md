@@ -1,0 +1,1 @@
+1. see what command is going on with user action open console and enter `sublime.log_commands(True)`
