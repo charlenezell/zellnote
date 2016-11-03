@@ -1,30 +1,59 @@
+if (require('electron-squirrel-startup')) return;
 const electron = require('electron');
 const download = require("download");
-const strUtil=require("./strUtil");
-const _=require("lodash");
+const strUtil = require("./strUtil");
+const _ = require("lodash");
 const {
   dialog,
   ipcMain
 } = electron;
 
 const path = require('path')
-ipcMain.on("irequest", function (e, {data}) {
-    let f=_.find(data,["name","from"]).value;
-    let t=_.find(data,["name","to"]).value;
-    let outDir=_.find(data,["name","outDir"]).value;
-    let pattern=_.find(data,["name","pattern"]).value;
-    let dest = path.resolve(outDir);
-    Promise.all(strUtil.range(f, t).map(v => {
-      return pattern.replace(/\*/gm,v);
-    }).map(x => download(x, dest))).then(() => {
-      console.log('files downloaded!');
-      e.sender.send("iresponse",{code:0});
-    },(err)=>{
-      console.log('files download fail!');
-      e.sender.send("iresponse",{code:-1,info:err});
-    });
+ipcMain.on("irequest", function (e, {
+  data
+}) {
+  let f = _.find(data, ["name", "from"]).value;
+  let t = _.find(data, ["name", "to"]).value;
+  let outDir = _.find(data, ["name", "outDir"]).value;
+  let pattern = _.find(data, ["name", "pattern"]).value;
+  let dest = path.resolve(outDir);
+  var allJob=strUtil.range(f, t).map(v => {
+    return pattern.replace(/\*/gm, v);
+  }).map(x => download(x, dest));
+  Promise.all(allJob).then(()=>{
+      console.log('files all downloaded!');
+      e.sender.send("downloadResponse", {
+        code: 0
+      });
+  },(err)=>{
+
   });
-  // Module to control application life.
+  var numbJob=allJob.length;
+  function b(){
+    numbJob--;
+    if(!numbJob){
+      e.sender.send("downloadComplete", {
+        code: 0
+      });
+    }
+  }
+  allJob.forEach((promise, index)=>{
+    promise.then(() => {
+
+      e.sender.send("downloadProgress", {
+        code: 0
+      });
+      b()
+    }, (err) => {
+      e.sender.send("downloadProgress", {
+        code: -1,
+        info:`${err.hostname}${err.path}`
+      });
+      b()
+    });
+  })
+});
+// Module to control application life.
 const app = electron.app
   // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
@@ -51,7 +80,7 @@ function createWindow() {
   }))
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

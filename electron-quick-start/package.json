@@ -1,10 +1,22 @@
 {
-  "name": "electron-quick-start",
+  "name": "bulddownloader",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
+  "build": {
+    "win": {
+      "title": "BulkDownloader",
+      "appId": "bulddownloader.zellw",
+      "version": "0.0.1",
+      "msi": false,
+      "authors": "zell.w"
+    }
+  },
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . bulkDownloader --platform=win32 --arch=ia32",
+    "pack": "build --dir",
+    "dist": "build"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,9 +29,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-builder": "^7.18.0",
+    "electron-packager": "^8.2.0",
+    "electron-winstaller": "^2.3.4"
   },
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "download": "^5.0.2",
     "jquery": "^3.1.1",
     "lodash": "^4.16.6"
