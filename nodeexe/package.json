@@ -1,0 +1,14 @@
+{
+  "name": "todesktop",
+  "version": "1.0.0",
+  "description": "todesktop",
+  "main": "index.js",
+  "scripts": {
+    "build":"nexe -i index.js -o aola.exe"
+  },
+  "author": "z.w",
+  "license": "ISC",
+  "dependencies": {
+    "open": "0.0.5"
+  }
+}
