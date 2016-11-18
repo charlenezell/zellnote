@@ -1,8 +1,16 @@
+所有圈子
 http://qq.100bt.com/AjaxShowAllTTQInfo.action
+所有block和每个圈子的info
 http://qq.100bt.com/ShowTtqCategory.action?ttqId=132
+所有block
 http://qq.100bt.com/ShowBlock.action?ttqId=132
-
+某个block下的topicInfo（没有置顶）
+http://qq.100bt.com/AjaxCacheTopicInfo.action?blockId=111
+某些topic的info
+http://qq.100bt.com/AjaxTopicInfos.action?topicIdList=10134803
+某个topic的评论列表
 http://qq.100bt.com/showCommonCommentAjax.action?topicId=10134803
+
 参数名	参数类型	必传	缺省值	描述
 topicId	int	N		话题id，与id 其一必选
 id	int	N		业务Id，与topicId其一必选
