@@ -1,0 +1,18 @@
+.ttqBlockList{
+    height:80rpx;
+    line-height: 80rpx;
+    width:100%;
+    white-space: nowrap;
+    background-color: #65C2FF;
+}
+.ttqBlockListItem{
+    display: inline-block;
+    font-size: 14pt;
+    padding:0 10pt;
+    height:100%;
+    vertical-align: top;
+}
+.ttqBlockListItem--current{
+    color:#fff;
+    background:#36ADFA;
+}

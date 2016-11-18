@@ -1,0 +1,45 @@
+/**index.wxss**/
+.ttqItem01{
+  display: flex;
+  align-items: stretch;
+  margin-bottom:20rpx;
+  background-color: #EFEFEF;
+  padding:10rpx;
+}
+.ttqItem01--2{
+outline:1px solid red;
+}
+.ttqItem01--3{
+outline:1px solid green;
+}
+.ttqItem01--4{
+outline:1px solid blue;
+}
+.ttqItem01--5{
+outline:1px solid pink;
+}
+.ttqItem01__lo01{
+  display: flex;
+  flex-direction:  column;
+  justify-content:space-between;
+  font-size: 11pt;
+  color:#666;
+}
+.ttqItem01__img{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 5px;
+  margin-right: 10rpx;
+}
+.ttqItem01__name{
+  font-family: "Microsoft Yahei";
+  font-size: 14pt;
+  color:#000;
+}
+.ttqItem01__kwItem{
+  font-size:11pt;
+  margin-right: 14rpx;
+}
+.ttqItem01__kwItem text{
+  font-family: Tahoma;
+}

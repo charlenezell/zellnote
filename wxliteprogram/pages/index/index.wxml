@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="ttqList">
+    <view wx:for="{{ttqInfo}}" class="ttqItem01 ttqItem01--{{item.__ttqType}}" data-ttqid="{{item.ttqId}}" bindtap="onTap">
+      <image class="ttqItem01__img" mode="aspectFill" src="{{item.iconUrl}}"></image>
+      <view class="ttqItem01__lo01">
+        <text class="ttqItem01__name">{{item.ttqName}}</text>
+        <text class="ttqItem01__memberNumb">有{{item.memberNum}}个{{item.memberName}}</text>
+        <view>
+          <text class="ttqItem01__todayTopicNumb ttqItem01__kwItem">今日:<text>{{item.todayTopicCountView}}</text>话题</text>
+          <text class="ttqItem01__yesterdayTopicNumb ttqItem01__kwItem">昨日:<text>{{item.yesterdayTopicCountView}}</text>话题</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

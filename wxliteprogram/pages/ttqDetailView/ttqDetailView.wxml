@@ -1,0 +1,15 @@
+<view class="container">
+    <scroll-view class="ttqBlockList" scroll-x="true" style="width: 100%" scroll-into-view="ttqBlockListItem_{{currentBlockId}}">
+       <view bindtap="onTap" id="ttqBlockListItem_{{item.blockId}}" class="ttqBlockListItem {{item.blockId==currentBlockId?'ttqBlockListItem--current':''}}" wx:for="{{blockList}}" data-blockid="{{item.blockId}}" >{{item.blockName}}</view>
+    </scroll-view>
+    <swiper class="ttqTopicList">
+        <swiper-item wx:for="{{currentTopicList}}">
+            <view class="ttqTopicListItem">
+                {{item.replyNumb}}
+                {{item.title}}
+                {{item.author}}
+                {{item.lastReplyTime}}
+            </view>
+        </swiper-item>
+    </swiper>
+</view>
