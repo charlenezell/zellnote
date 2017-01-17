@@ -1,15 +1,22 @@
 <view class="container">
-    <scroll-view class="ttqBlockList" scroll-x="true" style="width: 100%" scroll-into-view="ttqBlockListItem_{{currentBlockId}}">
-       <view bindtap="onTap" id="ttqBlockListItem_{{item.blockId}}" class="ttqBlockListItem {{item.blockId==currentBlockId?'ttqBlockListItem--current':''}}" wx:for="{{blockList}}" data-blockid="{{item.blockId}}" >{{item.blockName}}</view>
+    <scroll-view class="ttqBlockList" scroll-x="true" scroll-into-view="ttqBlockListItem_{{currentBlockId}}">
+       <view bindtap="onTap" id="ttqBlockListItem_{{item.blockId}}" class="ttqBlockListItem {{item.blockId==currentBlockId?'ttqBlockListItem--current':''}}" scroll-left="{{}}" wx:for="{{blockList}}" data-blockid="{{item.blockId}}" data-index="{{index}}">{{item.blockName}}</view>
     </scroll-view>
-    <swiper class="ttqTopicList">
-        <swiper-item wx:for="{{currentTopicList}}">
-            <view class="ttqTopicListItem">
-                {{item.replyNumb}}
-                {{item.title}}
-                {{item.author}}
-                {{item.lastReplyTime}}
+    <swiper class="ttqTopicList" current="{{currentBlockListIndex}}" bindchange="onSwiperChange">
+        <swiper-item wx:for="{{blockList}}">
+            <view wx:if="{{topicList[item.blockId]==undefine}}">
+                {{item.blockName}} is loading...
             </view>
+            <block wx:if="{{topicList[item.blockId]!=undefine}}">
+                <view wx:for="{{topicList[item.blockId]}}">
+                    <view class="ttqTopicListItem">
+                            {{item.replyNumb}}
+                            {{item.title}}
+                            {{item.author}}
+                            {{item.lastReplyTime}}
+                    </view>
+                </view>
+            </block>
         </swiper-item>
     </swiper>
 </view>
