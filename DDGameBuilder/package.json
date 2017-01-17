@@ -1,0 +1,40 @@
+{
+  "name": "doudouBuilder",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "build": {
+    "win": {
+      "title": "doudouBuilder",
+      "appId": "doudouBuilder.zellw",
+      "version": "0.0.1",
+      "msi": false,
+      "authors": "zell.w"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "buildUpack": "build --dir",
+    "buildPack": "build"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-builder": "^7.18.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "glob": "^7.1.1",
+    "jquery": "^3.1.1"
+  }
+}
