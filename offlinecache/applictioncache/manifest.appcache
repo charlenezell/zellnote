@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# v=1
+
+CACHE:
+/static/
+
+NETWORK:
+*
+
+FALLBACK:
+/ 404.html

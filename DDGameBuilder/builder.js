@@ -56,7 +56,7 @@ function build(gameRoot) {
             }
         })
         if (hasJqueryOrZepto) {
-            $("script[src*='jquery']").add($("script[src*='zepto']")).appendTo("head");
+            $("script[src*='jquery']").add($("script[src*='zepto']")).prependTo("head");
         }
         if (!hasJqueryOrZepto) {
             css += '<script type="text/javascript" src="http://www.doudou.in/play/common/zepto.min.js"></script>';
@@ -84,6 +84,8 @@ function build(gameRoot) {
         $("script[src*='code_statistics/7724common.js']").replaceWith('<script src="../7724common.js"></script>')
         $("script[src*=7724loading]").remove();
         $("script[src*='api.51h5.com/open/sdk.php']").remove();
+		$("script[src*='stat.api.4399.com/h5api/h5api.php']").remove();
+		$("script[src*='stat.js']").remove();
         $("body").prepend(bodyHead).append(bodyTail);
         // console.log($.html())
         fs.writeFileSync(gPath.resolve(g, 'index.html'), $.html(), "utf8");
