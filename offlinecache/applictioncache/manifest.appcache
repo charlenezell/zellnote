@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# v=1
+# v=13
 
 CACHE:
-/static/
+static/css.css
 
 NETWORK:
 *
 
 FALLBACK:
 / 404.html
+/xxx/ 404b.html
