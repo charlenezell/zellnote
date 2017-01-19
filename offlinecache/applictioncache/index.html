@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest.appcache">
+<html lang="en" manifest="offline.appcache">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>indexxxxx</title>
     <link rel="stylesheet" href="./static/css.css">
     <link rel="stylesheet" href="./nocache/nocache.css">
 </head>
 <body>
-helloefefe
+    <img src="./resource/2017-01-19_170918.png" alt="" />
+    <a href="list.html">lisst.html</a>
+    <script>
+        function onUpdateReady() {
+    if(confirm("find new version ok to reload")){
+        location.reload();
+    }
+    }
+    window.applicationCache.addEventListener('updateready', onUpdateReady);
+    if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+    onUpdateReady();
+    }
+    </script>
 </body>
 </html>
