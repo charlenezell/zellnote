@@ -10,10 +10,12 @@
             <block wx:if="{{topicList[item.blockId]!=undefine}}">
                 <view wx:for="{{topicList[item.blockId]}}">
                     <view class="ttqTopicListItem">
-                            {{item.replyNumb}}
-                            {{item.title}}
-                            {{item.author}}
-                            {{item.lastReplyTime}}
+                        {{item.author}}
+                        {{item.title}}
+                            <!--{{item.replyNumb}}
+                            
+                            
+                            {{item.lastReplyTime}}-->
                     </view>
                 </view>
             </block>

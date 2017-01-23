@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/style/index.css"],"names":[],"mappings":"AAAA;IACI,UAAU","file":"bundle.css","sourcesContent":["body{\r\n    color:red;\r\n}\n\n\n// WEBPACK FOOTER //\n// webpack:///src/style/index.css"],"sourceRoot":""}

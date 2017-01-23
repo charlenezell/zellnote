@@ -1,0 +1,24 @@
+{
+  "name": "act00",
+  "version": "1.0.0",
+  "description": "test webpack2 for the  pjacli new command",
+  "main": "index.js",
+  "scripts": {
+    "help": "webpack -h",
+    "watch": "webpack -w",
+    "deploy": "webpack -p --progress"
+  },
+  "author": "z.w",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.5",
+    "glob": "^7.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0"
+  }
+}
