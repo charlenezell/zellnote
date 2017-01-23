@@ -1,0 +1,14 @@
+@import "variables";
+@import "mixins";
+
+.hello{
+    &__pop{
+        text-align: center;
+    }
+    @include pop01(1000,0.4,red);
+    &__main{
+        width:200px;
+        height: 200px;
+        background-color:green;
+    }
+}

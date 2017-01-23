@@ -4,5 +4,9 @@
     "node": "registry:dt/node#6.0.0+20161110151007",
     "open": "registry:dt/open#0.0.3+20160316155526",
     "through2": "registry:dt/through2#2.0.0+20160317120654"
+  },
+  "globalDevDependencies": {
+    "handlebars": "registry:dt/handlebars#4.0.5+20160810231743",
+    "webpack-dev-server": "registry:dt/webpack-dev-server#1.12.1+20170117213337"
   }
 }
