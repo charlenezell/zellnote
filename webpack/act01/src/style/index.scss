@@ -5,10 +5,13 @@
     &__pop{
         text-align: center;
     }
-    @include pop01(1000,0.4,red);
+    @include pop01(1000,0.4,blue);
     &__main{
         width:200px;
         height: 200px;
         background-color:green;
     }
+}
+.longArticle{
+    height: 2000px;
 }

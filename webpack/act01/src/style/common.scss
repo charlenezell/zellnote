@@ -1,0 +1,8 @@
+@import "variables";
+@import "mixins";
+.rightbtm{
+    @include posfix(90,30,0);
+    background-color: blue;
+    width:30px;
+    height: 30px;
+}

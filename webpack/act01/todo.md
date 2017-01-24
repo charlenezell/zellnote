@@ -2,12 +2,15 @@
 
 ## webpack
 
-1. es6转js
-1. sass转css
-1. 资源md5
+1. [X]es6转js
+1. [X]sass转css
+    1. 里面有兼容问题libsass与ruby sass
+1. [X]资源md5
 1. html 模板语言化
+    1. 此处没有现成可注入handlebar helper的plugin暂时
+    1. 注入数据暂时考虑只能写一个插件注入运行时对象X 还是看到HtmlwebpackPlugin也是注入自己的option的那就也直接注入,然后在模板里面用with语句屏蔽掉插件的ns；
 1. 环境配置的抽出某种形式
-1. 可以使用既有的mixin驱动
+1. [X]可以使用既有的mixin驱动
 1. sprite拼贴
 
 ## advansed
@@ -17,3 +20,4 @@
 1. 体验类似ng-cli
 1. gulp 驱动webpack
 1. 看能否移除对zellsprite的依赖找到一个生成元数据的loader之类的
+1. cssModule
