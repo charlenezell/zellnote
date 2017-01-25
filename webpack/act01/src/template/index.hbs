@@ -1,32 +1,7 @@
 {{#with htmlWebpackPlugin.options}}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>{{pageData.title}}</title>
-    <meta name="keywords" content="{{pageData.keyword}}" />
-</head>
-
-<body>
-    <style>
-        body{
-        background-color:{{style.bgc}};
-        }
-    </style>
-    <div class="rightbtm"></div>
-    <header>hello2</header>
-    <div class="h">sdf</div>
-    <div class="longArticle"></div>
-    <table class="hello__pop">
-        <tr>
-            <td class="hello__pop__td">
-                <div class="hello__main">hello</div>
-                <div class="hello__overlay"></div>
-            </td>
-        </tr>
-    </table>
-</body>
-
-</html>
+    {{#> frame
+    T='首页标题'
+    }}
+        首页
+    {{/frame}}
 {{/with}}

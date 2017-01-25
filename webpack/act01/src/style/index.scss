@@ -1,17 +1,7 @@
 @import "variables";
 @import "mixins";
 
-.hello{
-    &__pop{
-        text-align: center;
-    }
-    @include pop01(1000,0.4,blue);
-    &__main{
-        width:200px;
-        height: 200px;
-        background-color:green;
-    }
-}
-.longArticle{
-    height: 2000px;
+body{
+    color:red;
+    background-image: url(img/bg.jpg);
 }

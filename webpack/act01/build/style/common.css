@@ -1,0 +1,12 @@
+.rightbtm {
+  position: fixed;
+  _position: absolute;
+  /* position fixed for IE6 */
+  left: 90px;
+  top: 30px;
+  _top: expression(new Function('return document.documentElement.scrollTop+30').call(this));
+  background-color: blue;
+  width: 30px;
+  height: 30px; }
+
+/*# sourceMappingURL=common.css.map?9c4fdcab094f44df6fcf465950d42dc4*/

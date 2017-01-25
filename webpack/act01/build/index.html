@@ -1,19 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>hello</title>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页标题</title>
+<meta name="description" content="奥拉星新手豪华礼包重磅来袭，轻松变强大奖人人有份，只要你通过本活动注册多多号，即可100%领取一份奥拉星新手豪华礼包。" />
+<meta name="keywords" content="奥拉星,奥拉星礼包,奥拉星豪华礼包,奥拉星成长礼包,奥拉星新手卡" />
+
+<link type="text/css" href="http://resource.a0bi.com/resource/style/css.css" rel="stylesheet" />
+<link href="http://resource.a0bi.com/resource/js/nav/commonNav.css" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 9]>
+<script src="http://resource.a0bi.com/resource/js/lib/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://resource.a0bi.com/resource/js/lib/jquery-modernizr-require.min.js?v=1485340405450"></script>
+<script type="text/javascript" src="http://resource.a0bi.com/resource/js/nav/in-min.js?v=1485340405450"></script>
+<script type="text/javascript">
+var ST_startTime=new Date();
+var ST_DOMLoadedTime=ST_LoadTime=0;
+$(function(){
+  ST_DOMLoadedTime=new Date()-ST_startTime;
+});
+$(window).load(function(){
+  ST_LoadTime=new Date()-ST_startTime;
+  /*setDate*/
+  window.setUserModelValue&&setUserModelValue("ST_DOMLoadedTime",ST_DOMLoadedTime);
+  window.setUserModelValue&&setUserModelValue("ST_LoadTime",ST_LoadTime);
+  window.DC_SendUserModelData&&DC_SendUserModelData();
+});
+</script>
+<script type="text/javascript">
+  var g_shareword='洪荒之力够不够？奥拉星全新资料片来袭，点击围观！';
+  var g_shareimg='http://aola.100bt.com/zt-360gift/style/img_s/share.jpg';
+  var g_sharelink='http://aola.100bt.com/zt-360gift/index.html';
+</script>
+<link href="style/common.css?9c4fdcab094f44df6fcf465950d42dc4" rel="stylesheet"><link href="style/index.css?678c8a15fb34c971dcb84dd1a315454c" rel="stylesheet"></head>
 <body>
-    <header>hello</header>
-    <div class="h">sdf</div>
-       <table class="hello__pop">
-     <tr>
-         <td class="hello__pop__td">
-             <div class="hello__main">helloworld</div>
-             <div class="hello__overlay"></div>
-         </td>
-     </tr>
- </table>
-<script type="text/javascript" src="./script/index.js"></script></body>
+  <!--公用导航-->
+  <div id="baseNav"></div>
+  <div class="mainBg">
+          首页
+  </div>
+    <script type="text/javascript" src="http://resource.a0bi.com/resource/js/util/newcommon/util.js"></script>
+    <script type="text/javascript" src="http://resource.a0bi.com/resource/js/util/newcommon/login.js"></script>
+    <script src="http://resource.a0bi.com/resource/js/util/newcommon/common.js"></script>
+    <script src="http://resource.a0bi.com/gwActivity/common/common.js?v=2"></script>
+    <script src="http://resource.a0bi.com/resource/js/plugins/sharerenderer.js"></script>
+    <script type="text/javascript" src="http://www.100bt.com/resource/js/lib/jquery.pagination.js"></script>
+    <script type="text/javascript">
+        window.UEDITOR_HOME_URL = "http://qq.100bt.com/ueditor1.4/";
+        window.UEDITOR_HOME_URL_ISALL=true;
+    </script>
+    <script type="text/javascript" src="http://www.100bt.com/comment/common/commentBase.js"></script>
+    
+    <script type="text/javascript" src="http://dc.100bt.com/js/dc.js"></script>
+    <script type="text/javascript" src="http://www.100bt.com/resource/js/lib/bdStatistic.js"></script>
+<script type="text/javascript" src="./script/common.js?4daf026de715618e9c2b"></script><script type="text/javascript" src="./script/index.js?8257bceff5355b4d048e"></script></body>
 </html>

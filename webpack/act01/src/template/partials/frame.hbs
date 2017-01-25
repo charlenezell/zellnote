@@ -2,16 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{{data.T}}</title>
-<meta name="description" content="{{data.D}}" />
-<meta name="keywords" content="{{data.K}}" />
+<title>{{iftrue T T pageData.T}}</title>
+<meta name="description" content="{{iftrue D D pageData.D}}" />
+<meta name="keywords" content="{{iftrue K K pageData.K}}" />
+{{{meta}}}
 <link type="text/css" href="http://resource.a0bi.com/resource/style/css.css" rel="stylesheet" />
 <link href="http://resource.a0bi.com/resource/js/nav/commonNav.css" rel="stylesheet" type="text/css" />
-{{#block "topStyle"}}
-
-{{/block}}
-<script type="text/javascript" src="http://resource.a0bi.com/resource/js/lib/jquery-min.js"></script>
-<script type="text/javascript" src="http://resource.a0bi.com/resource/js/nav/in-min.js"></script>
+{{{iftrue topStyle topStyle pageData.topStyle}}}
+<!--[if lt IE 9]>
+<script src="http://resource.a0bi.com/resource/js/lib/html5shiv.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://resource.a0bi.com/resource/js/lib/jquery-modernizr-require.min.js?v={{version}}"></script>
+<script type="text/javascript" src="http://resource.a0bi.com/resource/js/nav/in-min.js?v={{version}}"></script>
 <script type="text/javascript">
 var ST_startTime=new Date();
 var ST_DOMLoadedTime=ST_LoadTime=0;
@@ -27,18 +29,16 @@ $(window).load(function(){
 });
 </script>
 <script type="text/javascript">
-  var g_shareword='{{data.shareWord}}';
-  var g_shareimg='{{data.shareImg}}';
-  var g_sharelink='{{data.shareLink}}';
+  var g_shareword='{{iftrue shareWord shareWord pageData.shareWord}}';
+  var g_shareimg='{{iftrue shareImg shareImg pageData.shareImg}}';
+  var g_sharelink='{{iftrue shareLink shareLink pageData.shareLink}}';
 </script>
 </head>
 <body>
   <!--公用导航-->
   <div id="baseNav"></div>
   <div class="mainBg">
-  {{#block "mainContent"}}
-  默认
-  {{/block}}
+  {{> @partial-block }}
   </div>
     <script type="text/javascript" src="http://resource.a0bi.com/resource/js/util/newcommon/util.js"></script>
     <script type="text/javascript" src="http://resource.a0bi.com/resource/js/util/newcommon/login.js"></script>
@@ -51,8 +51,7 @@ $(window).load(function(){
         window.UEDITOR_HOME_URL_ISALL=true;
     </script>
     <script type="text/javascript" src="http://www.100bt.com/comment/common/commentBase.js"></script>
-    {{#block "bottomScript"}}
-    {{/block}}
+    {{{bottomScript}}}
     <script type="text/javascript" src="http://dc.100bt.com/js/dc.js"></script>
     <script type="text/javascript" src="http://www.100bt.com/resource/js/lib/bdStatistic.js"></script>
 </body>
