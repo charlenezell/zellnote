@@ -7,7 +7,13 @@ Page({
     topicList:[],
     currentBlockId: "",
     currentTopicList: [],
-    currentBlockListIndex: 0
+    currentBlockListIndex: 0,
+    userInfo:{}
+  },
+  getUserInfoByUserId:function(userId){
+    return getData("http://my.100bt.com/AjaxGetUserRelationshipInfo.action",{
+        destUId:userId
+      });
   },
   getDataByBlockId:function(blockId){
     if (!this.data.topicList[blockId]) {
@@ -26,6 +32,17 @@ Page({
               [blockId]: res.data.topicList
             })
           });
+          topicList[blockId]&&topicList[blockId].forEach((v)=>{
+            if(this.data.userInfo[v.authorId]){
+              console.log(1,this.data.userInfo[v.authorId]);
+            }else{
+              this.getUserInfoByUserId(v.authorId).then((res)=>{
+                this.data.userInfo[v.authorId]=res;
+                console.log(res)
+              })  
+            }
+            
+          })
         },
         fail: (res) => {},
         complete: (res) => {}

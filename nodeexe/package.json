@@ -4,11 +4,15 @@
   "description": "todesktop",
   "main": "index.js",
   "scripts": {
-    "build":"nexe -i index.js -o aola.exe"
+    "build": "nexe -i index.js -o aola.exe"
   },
   "author": "z.w",
   "license": "ISC",
   "dependencies": {
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "windows-shortcuts": "^0.1.4"
+  },
+  "devDependencies": {
+    "nexe": "^1.1.2"
   }
 }
