@@ -1,13 +1,9 @@
 let MultiImageUploadWidget = require("./widget/MultiImageUploadWidget.es6");
-$.fn.multiImageUploadWidget = function ({
-    uploaderOption
-}) {
+$.fn.multiImageUploadWidget = function (option) {
     this.each(function (k, v) {
         let instance = new MultiImageUploadWidget({
-            uploaderOption:{
-                pick: $(this),
-                ...uploaderOption
-            }
+            container:$(this),
+            ...option
         })
         $(this).data("multiImageUploadWidgetInstance", instance)
     })

@@ -1,6 +1,17 @@
 $("#multiimgwidget").multiImageUploadWidget({
+    closeHandler:function(){
+        console.log("closeOverride");
+    },
+    sureHandler:function(currentData){
+        console.log("sureOverride");
+        console.log(currentData);
+    },
+    cancelHandler:function(){
+        console.log("cancelOverride");
+    },
+    maxItems:10,
     uploaderOption: {
-        swf: "../node_modules/webuploader/dist/webuploader.min.js", //默认根据document域名判断除非这里写死一个url
+        swf: "../node_modules/webuploader/dist/Uploader.swf", //默认根据document域名判断除非这里写死一个url
         //与webuploader参数一致
         server: "http://qq.100bt.com/uploadImage.action",
         fileVal: "picdata",
@@ -9,11 +20,12 @@ $("#multiimgwidget").multiImageUploadWidget({
             extensions: 'gif,jpg,jpeg,bmp,png',
             mimeTypes: 'image/*'
         },
+        // runtimeOrder :"flash",
         compress: {
             width: 500,
-            height: 1600,
+            height: 500,
             // 图片质量，只有type为`image/jpeg`的时候才有效。
-            quality: 30,
+            quality: 80,
             // 是否允许放大，如果想要生成小图的时候不失真，此选项应该设置为false.
             // allowMagnify: false,
             // 是否允许裁剪。

@@ -35,7 +35,7 @@ export function script() {
     .pipe(buffer())
     // .pipe(eslint())
     // .pipe(eslint.format())
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest("./"));
     // .pipe(livereload());
 }
