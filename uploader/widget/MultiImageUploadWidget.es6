@@ -84,6 +84,13 @@ $.extend(MultiImageUploadWidget.prototype, {
             height: 120px;
             position: relative;
         }
+         .multiImageUploadWidget__item__table{
+            width:120px;
+            height:120px;
+        }
+        .multiImageUploadWidget__item__table td{
+            border:0;
+        }
 
         .multiImageUploadWidget__items__closebtn {
             cursor: pointer;
@@ -99,10 +106,10 @@ $.extend(MultiImageUploadWidget.prototype, {
 
         .multiImageUploadWidget__item img {
             display: inline-block;
-            max-width: 100%;
-            max-height: 100%;
-            _width: 100%;
-            _height: 100%;
+            max-width: 120px;
+            max-height: 120px;
+            _width: 120px;
+            _height: 120px;
         }
 
         .multiImageUploadWidget__uploadBtn {
@@ -128,6 +135,7 @@ $.extend(MultiImageUploadWidget.prototype, {
             position: absolute;
             width: 100%;
             height: 100%;
+            left:0;top:0;
         }
 
         .multiImageUploadWidget__item--normal {}
@@ -142,14 +150,20 @@ $.extend(MultiImageUploadWidget.prototype, {
         }
 
         .multiImageUploadWidget__itemTips--info {
+            background:black;
+
             background: rgba(0, 0, 0, 0.5);
         }
 
         .multiImageUploadWidget__itemTips--error {
+             background:red;
+
             background: rgba(255, 0, 0, 0.5);
         }
 
         .multiImageUploadWidget__itemTips--success {
+             background:green;
+
             background: rgba(0, 255, 0, 0.5);
         }
 
