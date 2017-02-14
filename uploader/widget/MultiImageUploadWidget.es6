@@ -272,10 +272,10 @@ $.extend(MultiImageUploadWidget.prototype, {
         return d;
     },
     judgeAddBtnState: function () {
-        if (this.fileCount < this.maxItems) {
-            this.$addBtn.show();
+          if (this.fileCount < this.maxItems) {
+            this.$addBtn.removeClass("webuploader-element-invisible")
         } else {
-            this.$addBtn.hide();
+            this.$addBtn.addClass("webuploader-element-invisible")
         }
     },
     getAddBtn: function () {
