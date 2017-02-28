@@ -11,8 +11,8 @@
         "commonjs": true
     },
     "rules": {
-        "no-console": "off",
-        "no-cond-assign": "warn",
-        "no-unused-vars": "warn"
+        "no-console": 0,
+        "no-cond-assign": 0,
+        "no-unused-vars": 0
     }
 }
