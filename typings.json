@@ -1,6 +1,7 @@
 {
   "dependencies": {},
   "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.9.7+20161130133742",
     "node": "registry:dt/node#6.0.0+20161110151007",
     "open": "registry:dt/open#0.0.3+20160316155526",
     "through2": "registry:dt/through2#2.0.0+20160317120654"

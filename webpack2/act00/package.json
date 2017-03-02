@@ -4,9 +4,12 @@
   "description": "test webpack2 for the  pjacli new command",
   "main": "index.js",
   "scripts": {
-    "help": "webpack -h",
-    "watch": "webpack -w",
-    "deploy": "webpack -p --progress"
+    "serve": "webpack-dev-server --port=4001 --inline --open -wp --hot --progress",
+    "clean": "rimraf ./build/**/*",
+    "watch": "npm run clean && webpack -w --progress",
+    "start": "npm run watch",
+    "build": "npm run clean && webpack",
+    "help": "webpack-dev-server -h"
   },
   "author": "z.w",
   "license": "ISC",
@@ -16,9 +19,21 @@
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
+    "es3ify-webpack-plugin": "0.0.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.5",
     "glob": "^7.1.1",
+    "handlebars": "^4.0.6",
+    "handlebars-loader": "^1.4.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.4.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.0"
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.1"
+  },
+  "dependencies": {
+    "core-js": "^2.4.1"
   }
 }
