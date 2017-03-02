@@ -7,6 +7,7 @@
   },
   "globalDevDependencies": {
     "handlebars": "registry:dt/handlebars#4.0.5+20160810231743",
+    "jquery": "registry:dt/jquery#1.10.0+20170123093700",
     "webpack-dev-server": "registry:dt/webpack-dev-server#1.12.1+20170117213337"
   }
 }
