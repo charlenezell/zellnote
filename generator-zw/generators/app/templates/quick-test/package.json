@@ -4,9 +4,10 @@
   "description": "Produce universal library with webpack and es6",
   "main": "build/index.js",
   "scripts": {
-    "build": "webpack --env build",
+    "build": "npm run clean && webpack --env=build",
     "dev": "webpack --progress --colors --watch --env dev",
-    "serve": "webpack-dev-server --hot --inline"
+    "serve": "webpack-dev-server --port=4000 --inline  --progress",
+    "clean": "rimraf ./build/**/*"
   },
   "devDependencies": {
     "babel": "6.5.2",
@@ -21,15 +22,19 @@
     "es3ify-webpack-plugin": "0.0.1",
     "eslint": "1.7.2",
     "eslint-loader": "1.6.1",
+    "extract-text-webpack-plugin": "^2.0.0",
     "file-loader": "^0.10.0",
+    "handlebars-loader": "^1.4.0",
+    "html-webpack-plugin": "^2.28.0",
     "lite-server": "^2.2.2",
     "node-sass": "^4.5.0",
+    "rimraf": "^2.6.1",
     "sass-loader": "^6.0.0",
     "shim4webpack": "0.0.2",
     "style-loader": "^0.13.1",
-    "html-webpack-plugin": "^2.28.0",
     "url-loader": "^0.5.7",
     "webpack": "2.2.1",
+    "webpack-dev-server": "^2.4.1",
     "yargs": "6.6.0"
   },
   "repository": {

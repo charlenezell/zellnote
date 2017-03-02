@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "mixins";
+@import "variables";
+body{
+    background: green;
+    background-image: url(img/jingling-39.jpg);
+}
+h2{
+    @include when(mobile){
+        color:blue;
+    };
+}
