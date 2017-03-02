@@ -1,0 +1,6 @@
+{
+  "name": "generator-zw",
+  "dependencies": {
+    "yeoman-generator": "registry:dt/yeoman-generator#1.0.0+20170213213028"
+  }
+}
