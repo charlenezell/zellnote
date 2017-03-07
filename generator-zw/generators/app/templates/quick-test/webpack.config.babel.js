@@ -67,7 +67,6 @@ function allEntryScript() {
   glob.sync(fromSrcRoot() + "/*.js").forEach(v => {
     t[path.basename(v, '.js')] = path.resolve("./", v);
   });
-  console.log(t);
   return t;
 }
 
@@ -83,7 +82,7 @@ const config = {
   entry: {
     ...allEntryScript()
   },
-  devtool: env=="build"?false:"eval-source-map",
+  devtool: env == "build" ? false : "eval-source-map",
   output: {
     path: fromBuildRoot('build'),
     filename: 'script/[name].js',
@@ -106,18 +105,18 @@ const config = {
       {
         test: /\.scss/,
         use: extractCSS.extract({
-          fallback:'style-loader',
+          fallback: 'style-loader',
           use: [{
             loader: "css-loader",
-            options:{
-              minimize:env=="build"?true:false,
-              sourceMap:env=="build"?false:true
+            options: {
+              minimize: env == "build" ? true : false,
+              sourceMap: env == "build" ? false : true
             }
           }, {
             loader: "sass-loader",
             options: {
               includePaths: sassLibPath,
-              sourceMap:env=="build"?false:true
+              sourceMap: env == "build" ? false : true
             }
           }]
         }),
@@ -146,7 +145,7 @@ const config = {
     alias: {
 
     },
-    // modules: [path.resolve('./src')],
+    modules: ["node_modules"],
     extensions: ['.json', '.js']
   },
   plugins: plugins

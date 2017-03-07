@@ -1,0 +1,167 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$a1-name: 'a1';
+$a1-x: 693px;
+$a1-y: 0px;
+$a1-offset-x: -693px;
+$a1-offset-y: 0px;
+$a1-width: 965px;
+$a1-height: 160px;
+$a1-total-width: 1658px;
+$a1-total-height: 1233px;
+$a1-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$a1: (693px, 0px, -693px, 0px, 965px, 160px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 'a1', );
+$a2-name: 'a2';
+$a2-x: 0px;
+$a2-y: 0px;
+$a2-offset-x: 0px;
+$a2-offset-y: 0px;
+$a2-width: 693px;
+$a2-height: 533px;
+$a2-total-width: 1658px;
+$a2-total-height: 1233px;
+$a2-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$a2: (0px, 0px, 0px, 0px, 693px, 533px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 'a2', );
+$a3-name: 'a3';
+$a3-x: 0px;
+$a3-y: 813px;
+$a3-offset-x: 0px;
+$a3-offset-y: -813px;
+$a3-width: 230px;
+$a3-height: 420px;
+$a3-total-width: 1658px;
+$a3-total-height: 1233px;
+$a3-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$a3: (0px, 813px, 0px, -813px, 230px, 420px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 'a3', );
+$s1-name: 's1';
+$s1-x: 693px;
+$s1-y: 160px;
+$s1-offset-x: -693px;
+$s1-offset-y: -160px;
+$s1-width: 357px;
+$s1-height: 350px;
+$s1-total-width: 1658px;
+$s1-total-height: 1233px;
+$s1-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$s1: (693px, 160px, -693px, -160px, 357px, 350px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 's1', );
+$s2-name: 's2';
+$s2-x: 0px;
+$s2-y: 533px;
+$s2-offset-x: 0px;
+$s2-offset-y: -533px;
+$s2-width: 357px;
+$s2-height: 280px;
+$s2-total-width: 1658px;
+$s2-total-height: 1233px;
+$s2-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$s2: (0px, 533px, 0px, -533px, 357px, 280px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 's2', );
+$s3-name: 's3';
+$s3-x: 1050px;
+$s3-y: 160px;
+$s3-offset-x: -1050px;
+$s3-offset-y: -160px;
+$s3-width: 357px;
+$s3-height: 330px;
+$s3-total-width: 1658px;
+$s3-total-height: 1233px;
+$s3-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$s3: (1050px, 160px, -1050px, -160px, 357px, 330px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 's3', );
+$s4-name: 's4';
+$s4-x: 357px;
+$s4-y: 533px;
+$s4-offset-x: -357px;
+$s4-offset-y: -533px;
+$s4-width: 357px;
+$s4-height: 280px;
+$s4-total-width: 1658px;
+$s4-total-height: 1233px;
+$s4-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$s4: (357px, 533px, -357px, -533px, 357px, 280px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 's4', );
+$s5-name: 's5';
+$s5-x: 714px;
+$s5-y: 533px;
+$s5-offset-x: -714px;
+$s5-offset-y: -533px;
+$s5-width: 357px;
+$s5-height: 280px;
+$s5-total-width: 1658px;
+$s5-total-height: 1233px;
+$s5-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$s5: (714px, 533px, -714px, -533px, 357px, 280px, 1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', 's5', );
+$spritesheet-width: 1658px;
+$spritesheet-height: 1233px;
+$spritesheet-image: 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png';
+$spritesheet-sprites: ($a1, $a2, $a3, $s1, $s2, $s3, $s4, $s5, );
+$spritesheet: (1658px, 1233px, 'D:\oldf\zellnote\generator-zw\generators\app\templates\quick-test\style\sprite\xinshoufuli.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
