@@ -38,13 +38,17 @@ module.exports = Generator.extend({
       template
     } = this.props;
     if (template === 'quick-test') {
-      glob.sync(path.join(template, '**/*'), {
-        cwd: this.sourceRoot()
+      // console.log()
+
+      glob.sync(`${template}/**/*`, {
+        cwd: this.sourceRoot(),
+        ignore: [`node_modules/**`, `typings/**`, `build/**`, `src/style/sprites/**`].map(v => `${template}/` + v),
+        dot: true
       }).forEach(v => {
-        this.log(v, this.templatePath(v), this.destinationPath(v));
+        // this.log(v, this.templatePath(v), this.destinationPath(v),this.destinationPath(v.replace(new RegExp('^' + template + "/", 'g'), '')));
         this.fs.copy(
           this.templatePath(v),
-          this.destinationPath(v.replace(new RegExp('^' + template + "/",'g'), ''))
+          this.destinationPath(v.replace(new RegExp('^' + template + "/", 'g'), ''))
         );
       })
     }
