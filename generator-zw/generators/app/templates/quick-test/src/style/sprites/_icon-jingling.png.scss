@@ -1,0 +1,576 @@
+@mixin icon-jingling_a_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,45,0,175,175);
+}
+
+
+@function  icon-jingling_a_inspect($key:null) {
+  $ix:-45px;
+  $x:45;
+  $y:0;
+  $iy:0px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_b_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,90,90,175,175);
+}
+
+
+@function  icon-jingling_b_inspect($key:null) {
+  $ix:-90px;
+  $x:90;
+  $y:90;
+  $iy:-90px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_c_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,0,45,175,175);
+}
+
+
+@function  icon-jingling_c_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:45;
+  $iy:-45px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_cn_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,45,45,175,175);
+}
+
+
+@function  icon-jingling_cn_inspect($key:null) {
+  $ix:-45px;
+  $x:45;
+  $y:45;
+  $iy:-45px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_d_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,90,0,175,175);
+}
+
+
+@function  icon-jingling_d_inspect($key:null) {
+  $ix:-90px;
+  $x:90;
+  $y:0;
+  $iy:0px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_em_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,90,45,175,175);
+}
+
+
+@function  icon-jingling_em_inspect($key:null) {
+  $ix:-90px;
+  $x:90;
+  $y:45;
+  $iy:-45px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_f_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,0,90,175,175);
+}
+
+
+@function  icon-jingling_f_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:90;
+  $iy:-90px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_fx_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,45,90,175,175);
+}
+
+
+@function  icon-jingling_fx_inspect($key:null) {
+  $ix:-45px;
+  $x:45;
+  $y:90;
+  $iy:-90px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_g_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,0,0,175,175);
+}
+
+
+@function  icon-jingling_g_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:0;
+  $iy:0px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_h_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,135,0,175,175);
+}
+
+
+@function  icon-jingling_h_inspect($key:null) {
+  $ix:-135px;
+  $x:135;
+  $y:0;
+  $iy:0px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_hh_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,135,45,175,175);
+}
+
+
+@function  icon-jingling_hh_inspect($key:null) {
+  $ix:-135px;
+  $x:135;
+  $y:45;
+  $iy:-45px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_jj_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,135,90,175,175);
+}
+
+
+@function  icon-jingling_jj_inspect($key:null) {
+  $ix:-135px;
+  $x:135;
+  $y:90;
+  $iy:-90px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_jr_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,0,135,175,175);
+}
+
+
+@function  icon-jingling_jr_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:135;
+  $iy:-135px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_l_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,45,135,175,175);
+}
+
+
+@function  icon-jingling_l_inspect($key:null) {
+  $ix:-45px;
+  $x:45;
+  $y:135;
+  $iy:-135px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_lq_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,90,135,175,175);
+}
+
+
+@function  icon-jingling_lq_inspect($key:null) {
+  $ix:-90px;
+  $x:90;
+  $y:135;
+  $iy:-135px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin icon-jingling_lz_new($mw:null,$mh:null) {
+  background-image: url(sprites/icon-jingling.png);
+  width: 40px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/40));
+  }
+  @if $mh != null {
+      width: ($mh*(40/40));
+      height:$mh;
+  }
+  @include bgp_newabs(40,40,135,135,175,175);
+}
+
+
+@function  icon-jingling_lz_inspect($key:null) {
+  $ix:-135px;
+  $x:135;
+  $y:135;
+  $iy:-135px;
+  $iw:40px;
+  $ih:40px;
+  $width:40;
+  $height:40;
+  $img:"sprites/icon-jingling.png";
+  $totalWidth:175;
+  $totalHeight:175;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+

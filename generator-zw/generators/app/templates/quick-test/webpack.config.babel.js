@@ -28,7 +28,7 @@ function getFileNameWithOutExt(fn) {
   return path.basename(fn, path.extname(fn));
 }
 const extractCSS = new ExtractTextPlugin({
-  filename: 'style/[name].css?[contenthash]',
+  filename: 'style/[name].css?[contenthash:8]',
 });
 let plugins = [
     new es3ifyPlugin(),
@@ -85,7 +85,7 @@ const config = {
   devtool: env == "build" ? false : "eval-source-map",
   output: {
     path: fromBuildRoot('build'),
-    filename: 'script/[name].js',
+    filename: 'script/[name].js?[hash:8]'
     // library: libraryName,
     // libraryTarget: 'umd',
     // umdNamedDefine: true,

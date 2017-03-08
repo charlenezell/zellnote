@@ -1,0 +1,468 @@
+@mixin alpha_1_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 41px;
+  height: 40px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(40/41));
+  }
+  @if $mh != null {
+      width: ($mh*(41/40));
+      height:$mh;
+  }
+  @include bgp_newabs(41,40,387,95,470,288);
+}
+
+
+@function  alpha_1_inspect($key:null) {
+  $ix:-387px;
+  $x:387;
+  $y:95;
+  $iy:-95px;
+  $iw:41px;
+  $ih:40px;
+  $width:41;
+  $height:40;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_10_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 16px;
+  height: 24px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(24/16));
+  }
+  @if $mh != null {
+      width: ($mh*(16/24));
+      height:$mh;
+  }
+  @include bgp_newabs(16,24,452,60,470,288);
+}
+
+
+@function  alpha_10_inspect($key:null) {
+  $ix:-452px;
+  $x:452;
+  $y:60;
+  $iy:-60px;
+  $iw:16px;
+  $ih:24px;
+  $width:16;
+  $height:24;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_11_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 127px;
+  height: 90px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(90/127));
+  }
+  @if $mh != null {
+      width: ($mh*(127/90));
+      height:$mh;
+  }
+  @include bgp_newabs(127,90,255,60,470,288);
+}
+
+
+@function  alpha_11_inspect($key:null) {
+  $ix:-255px;
+  $x:255;
+  $y:60;
+  $iy:-60px;
+  $iw:127px;
+  $ih:90px;
+  $width:127;
+  $height:90;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_2_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 90px;
+  height: 34px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(34/90));
+  }
+  @if $mh != null {
+      width: ($mh*(90/34));
+      height:$mh;
+  }
+  @include bgp_newabs(90,34,145,233,470,288);
+}
+
+
+@function  alpha_2_inspect($key:null) {
+  $ix:-145px;
+  $x:145;
+  $y:233;
+  $iy:-233px;
+  $iw:90px;
+  $ih:34px;
+  $width:90;
+  $height:34;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_3_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 200px;
+  height: 30px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(30/200));
+  }
+  @if $mh != null {
+      width: ($mh*(200/30));
+      height:$mh;
+  }
+  @include bgp_newabs(200,30,265,198,470,288);
+}
+
+
+@function  alpha_3_inspect($key:null) {
+  $ix:-265px;
+  $x:265;
+  $y:198;
+  $iy:-198px;
+  $iw:200px;
+  $ih:30px;
+  $width:200;
+  $height:30;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_4_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 260px;
+  height: 30px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(30/260));
+  }
+  @if $mh != null {
+      width: ($mh*(260/30));
+      height:$mh;
+  }
+  @include bgp_newabs(260,30,0,198,470,288);
+}
+
+
+@function  alpha_4_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:198;
+  $iy:-198px;
+  $iw:260px;
+  $ih:30px;
+  $width:260;
+  $height:30;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_5_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 60px;
+  height: 30px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(30/60));
+  }
+  @if $mh != null {
+      width: ($mh*(60/30));
+      height:$mh;
+  }
+  @include bgp_newabs(60,30,387,60,470,288);
+}
+
+
+@function  alpha_5_inspect($key:null) {
+  $ix:-387px;
+  $x:387;
+  $y:60;
+  $iy:-60px;
+  $iw:60px;
+  $ih:30px;
+  $width:60;
+  $height:30;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_6_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 100px;
+  height: 120px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(120/100));
+  }
+  @if $mh != null {
+      width: ($mh*(100/120));
+      height:$mh;
+  }
+  @include bgp_newabs(100,120,150,60,470,288);
+}
+
+
+@function  alpha_6_inspect($key:null) {
+  $ix:-150px;
+  $x:150;
+  $y:60;
+  $iy:-60px;
+  $iw:100px;
+  $ih:120px;
+  $width:100;
+  $height:120;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_7_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 320px;
+  height: 55px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(55/320));
+  }
+  @if $mh != null {
+      width: ($mh*(320/55));
+      height:$mh;
+  }
+  @include bgp_newabs(320,55,150,0,470,288);
+}
+
+
+@function  alpha_7_inspect($key:null) {
+  $ix:-150px;
+  $x:150;
+  $y:0;
+  $iy:0px;
+  $iw:320px;
+  $ih:55px;
+  $width:320;
+  $height:55;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_8_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 140px;
+  height: 55px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(55/140));
+  }
+  @if $mh != null {
+      width: ($mh*(140/55));
+      height:$mh;
+  }
+  @include bgp_newabs(140,55,0,233,470,288);
+}
+
+
+@function  alpha_8_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:233;
+  $iy:-233px;
+  $iw:140px;
+  $ih:55px;
+  $width:140;
+  $height:55;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_9_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 145px;
+  height: 193px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(193/145));
+  }
+  @if $mh != null {
+      width: ($mh*(145/193));
+      height:$mh;
+  }
+  @include bgp_newabs(145,193,0,0,470,288);
+}
+
+
+@function  alpha_9_inspect($key:null) {
+  $ix:0px;
+  $x:0;
+  $y:0;
+  $iy:0px;
+  $iw:145px;
+  $ih:193px;
+  $width:145;
+  $height:193;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_tag01_h_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 12px;
+  height: 13px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(13/12));
+  }
+  @if $mh != null {
+      width: ($mh*(12/13));
+      height:$mh;
+  }
+  @include bgp_newabs(12,13,433,95,470,288);
+}
+
+
+@function  alpha_tag01_h_inspect($key:null) {
+  $ix:-433px;
+  $x:433;
+  $y:95;
+  $iy:-95px;
+  $iw:12px;
+  $ih:13px;
+  $width:12;
+  $height:13;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+
+@mixin alpha_tag01_n_new($mw:null,$mh:null) {
+  background-image: url(sprites/alpha.png);
+  width: 12px;
+  height: 13px;
+  @if $mw != null {
+      width: $mw;
+      height: ($mw*(13/12));
+  }
+  @if $mh != null {
+      width: ($mh*(12/13));
+      height:$mh;
+  }
+  @include bgp_newabs(12,13,450,95,470,288);
+}
+
+
+@function  alpha_tag01_n_inspect($key:null) {
+  $ix:-450px;
+  $x:450;
+  $y:95;
+  $iy:-95px;
+  $iw:12px;
+  $ih:13px;
+  $width:12;
+  $height:13;
+  $img:"sprites/alpha.png";
+  $totalWidth:470;
+  $totalHeight:288;
+  @if $key{
+    @return map-get((px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height),$key);
+  }@else{
+    @return (px_height:$ih,px_width:$iw,px_x:$ix,px_y:$iy,img:$img,totalHeight:$totalHeight,totalWidth:$totalWidth,x:$x,y:$y,width:$width,height:$height);
+  }
+
+}
+

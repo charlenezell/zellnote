@@ -1,1 +1,9 @@
-body{background:green;background-image:url(img/jingling-39.jpg?62d44366)}@media (max-width:540px){h2{color:blue}}
+body {
+  background-image: url(img/icon-jingling.png?ca67ea9e);
+  width: 40px;
+  height: 40px;
+  background-position: -45px 0px; }
+
+@media (max-width: 540px) {
+  h2 {
+    color: blue; } }

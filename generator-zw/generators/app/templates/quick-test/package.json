@@ -4,10 +4,11 @@
   "description": "Produce universal library with webpack and es6",
   "main": "build/index.js",
   "scripts": {
-    "build": "npm run clean && webpack --env=build",
+    "sprite": "gulp sprite",
+    "build": "npm run clean &&npm run sprite&& webpack --env=build",
     "dev": "webpack --progress --colors --watch --env dev",
     "serve": "webpack-dev-server --port=4000 --inline  --progress",
-    "clean": "rimraf ./build/**/*"
+    "clean": "rimraf ./build/**/*&&rimraf ./src/style/sprites/**/*"
   },
   "devDependencies": {
     "babel": "6.5.2",
@@ -21,6 +22,7 @@
     "es3ify-webpack-plugin": "0.0.1",
     "extract-text-webpack-plugin": "^2.0.0",
     "file-loader": "^0.10.0",
+    "gulp": "^3.9.1",
     "handlebars-loader": "^1.4.0",
     "html-webpack-plugin": "^2.28.0",
     "lite-server": "^2.2.2",
@@ -32,7 +34,7 @@
     "webpack": "2.2.1",
     "webpack-dev-server": "^2.4.1",
     "yargs": "6.6.0",
-    "zellsprite": "^1.0.15"
+    "zellsprite": "^1.1.0"
   },
   "repository": {
     "type": "git",
