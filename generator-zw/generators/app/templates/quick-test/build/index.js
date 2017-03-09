@@ -1,0 +1,1 @@
+webpackJsonp([0],[,function(e,n){},function(e,n,t){"use strict";function o(e){return e&&e.__esModule?e:{"default":e}}var c=t(1),u=(o(c),t(0)),l=(o(u),document.createElement("div"));l.textContent="hello",l.className="worldBtn",document.body.appendChild(l);var a=[1,2,3];console.log(a.map(function(e){return e+1}))}],[2]);

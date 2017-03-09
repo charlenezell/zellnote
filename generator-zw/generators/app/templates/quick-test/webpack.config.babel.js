@@ -2,10 +2,11 @@
 
 import HtmlwebpackPlugin from 'html-webpack-plugin';
 import ExtractTextPlugin from "extract-text-webpack-plugin";
+import ScriptExtHtmlWebpackPlugin from 'script-ext-html-webpack-plugin';
+import StyleExtHtmlWebpackPlugin from 'style-ext-html-webpack-plugin';
 import fs from 'fs';
-const es3ifyPlugin = require('es3ify-webpack-plugin');
+// const es3ifyPlugin = require('es3ify-webpack-plugin');
 const webpack = require('webpack');
-
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
 const glob = require("glob");
@@ -28,16 +29,41 @@ function getFileNameWithOutExt(fn) {
   return path.basename(fn, path.extname(fn));
 }
 const extractCSS = new ExtractTextPlugin({
-  filename: 'style/[name].css?[contenthash:8]',
+  // outputPath: '../style/',
+  filename: '[name].css' //如若使用了StyleExtHtmlWebpackPlugin的话不能使用带hash的文件名
+  // filename: 'style/[name].css?[contenthash:8]',
 });
 let plugins = [
-    new es3ifyPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "polyfills"
+      /*,
+            minChunks: Infinity*/
+      // (with more entries, this ensures that no other module
+      //  goes into the vendor chunk)
+    }),
+    // new es3ifyPlugin(),
     extractCSS,
     ...glob.sync("./src/pages/*.hbs").map(v => {
       return new HtmlwebpackPlugin({
+        // hash:true,//使用inline时候这个不能有
+        // _moduleName:v.replace(".hbs",""),
         template: v,
-        // chunks: ['polyfills',getFileNameWithOutExt(v)],
-        chunks: [getFileNameWithOutExt(v)],
+        minify: {
+          decodeEntities: true,
+          // removeAttributeQuotes: true,
+          collapseInlineTagWhitespace: true,
+          preserveLineBreaks: true,
+          collapseWhitespace: true,
+          minifyCSS: true
+          /*,
+                    minifyJS: true*/
+        },
+        // outputPath: '../',
+        xhtml: true,
+        chunks: ['polyfills', getFileNameWithOutExt(v)],
+        // chunks: [getFileNameWithOutExt(v)],
+        // chunks: [],
+        // inject:false,
         filename: `${getFileNameWithOutExt(v)}.html`,
         ...appCommonData
       })
@@ -49,13 +75,34 @@ const {
 } = {
   sassLibPath: [path.resolve('E:/projectA/source/web/resource/marketnew/common/src/scss/common/')]
 };
+if (projectConfig.inline) {
+  plugins.push(
+    new StyleExtHtmlWebpackPlugin()
+  )
+  plugins.push(
+    new ScriptExtHtmlWebpackPlugin({
+      // defaultAttribute: 'defer',
+      inline: glob.sync(fromSrcRoot() + "/*.js").map(v => path.basename(v)).concat(["polyfills.js"])
+    })
+  )
+}
 if (env === 'build') {
-  plugins.push(new UglifyJsPlugin({
-    minimize: true
+  plugins.push(new UglifyJsPlugin({//这里真是汗啊。。。。
+    mangle: {
+      // mangle options, if any
+      screw_ie8: false
+    },
+    compress: {
+      screw_ie8: false,
+      //properties: false // optional: don't convert foo["bar"] to foo.bar
+    },
+    output: {
+      screw_ie8: false
+    }
   }));
-  outputFile = libraryName + '.min.js';
+  // outputFile = libraryName + '.min.js';
 } else {
-  outputFile = libraryName + '.js';
+  // outputFile = libraryName + '.js';
 }
 
 function fromSrcRoot(target) {
@@ -65,6 +112,7 @@ function fromSrcRoot(target) {
 function allEntryScript() {
   let t = {}
   glob.sync(fromSrcRoot() + "/*.js").forEach(v => {
+    // console.log(path.basename(v, '.js'),path.resolve("./", v))
     t[path.basename(v, '.js')] = path.resolve("./", v);
   });
   return t;
@@ -81,11 +129,15 @@ const config = {
   },
   entry: {
     ...allEntryScript()
+    /*,
+        "polyfills": ["core-js"]*/
   },
   devtool: env == "build" ? false : "eval-source-map",
   output: {
     path: fromBuildRoot('build'),
-    filename: 'script/[name].js?[hash:8]'
+    // filename: 'script/[name].js'
+    filename: '[name].js'
+    // filename: 'script/[name].js?[hash:8]'
     // library: libraryName,
     // libraryTarget: 'umd',
     // umdNamedDefine: true,
@@ -94,7 +146,7 @@ const config = {
   module: {
     rules: [{
         test: /(\.jsx|\.js)$/,
-        loader: 'babel-loader',
+        loader: ['es3ify-loader', 'babel-loader'],
         exclude: /(node_modules|bower_components)/
       },
       {
@@ -134,8 +186,7 @@ const config = {
         loader: 'url-loader',
         options: {
           limit: 10,
-          name: 'img/[name].[ext]?[sha256:hash:8]',
-          outputPath: 'style/'
+          name: '[name].[ext]?[sha256:hash:8]'
         },
         exclude: /(node_modules|bower_components)/
       }

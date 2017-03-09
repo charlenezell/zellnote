@@ -1,3 +1,4 @@
 {
-    "https":false
+    "https":false,
+    "inline":true
 }
