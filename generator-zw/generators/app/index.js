@@ -9,18 +9,14 @@ module.exports = Generator.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the super ' + chalk.red('generator-zw') + ' generator!'
+      '欢迎使用 ' + chalk.red('zw') + 'project generator!'
     ));
 
     var prompts = [{
       type: 'list',
       name: 'template',
       message: '选择一个模板',
-      choices: [
-        'jslib',
-        'widget',
-        'quick-test'
-      ],
+      choices: glob.sync(__dirname+"/templates/*").map(v=>path.basename(v))
     }];
 
     return this.prompt(prompts).then(function (props) {
@@ -29,36 +25,17 @@ module.exports = Generator.extend({
   },
 
   writing: function () {
-    console.log(this.props);
-    // this.fs.copy(
-    //   this.templatePath('dummyfile.txt'),
-    //   this.destinationPath('dummyfile.txt')
-    // );
     let {
       template
     } = this.props;
-    if (template === 'quick-test') {
-      // console.log()
-
-      glob.sync(`${template}/**/*`, {
-        cwd: this.sourceRoot(),
-        ignore: [`node_modules/**`, `typings/**`, `build/**`, `src/style/sprites/**`].map(v => `${template}/` + v),
-        dot: true
-      }).forEach(v => {
-        // this.log(v, this.templatePath(v), this.destinationPath(v),this.destinationPath(v.replace(new RegExp('^' + template + "/", 'g'), '')));
-        this.fs.copy(
-          this.templatePath(v),
-          this.destinationPath(v.replace(new RegExp('^' + template + "/", 'g'), ''))
-        );
-      })
-    }
+    require(path.resolve(__dirname,template)).init(template,this);
   },
 
   install: function () {
-    this.installDependencies({
-      npm: true,
-      bower: false,
-      yarn: false
-    })
+    // this.installDependencies({
+    //   npm: true,
+    //   bower: false,
+    //   yarn: false
+    // })
   }
 });
