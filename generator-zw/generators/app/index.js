@@ -16,26 +16,45 @@ module.exports = Generator.extend({
       type: 'list',
       name: 'template',
       message: '选择一个模板',
-      choices: glob.sync(__dirname+"/templates/*").map(v=>path.basename(v))
+      choices: glob.sync(__dirname + "/templates/*").map(v => path.basename(v))
     }];
 
-    return this.prompt(prompts).then(function (props) {
-      this.props = props;
-    }.bind(this));
+    var askingQuestion = new Promise((res, rej) => {
+      this.prompt(prompts).then((props) => {
+        this.props = props;
+        let {
+          template
+        } = this.props;
+        let templateModule = require(path.resolve(__dirname, template));
+        if (templateModule.askQuestions !== void 0) {
+          this.prompt(templateModule.askQuestions()).then((props) => {
+            this.props = Object.assign(this.props, props);
+            res();
+          })
+        } else {
+          res();
+        }
+      });
+    });
+
+
+
+    return askingQuestion;
+
   },
 
   writing: function () {
     let {
       template
     } = this.props;
-    require(path.resolve(__dirname,template)).init(template,this);
+    require(path.resolve(__dirname, template)).init(template, this);
   },
 
   install: function () {
-    // this.installDependencies({
-    //   npm: true,
-    //   bower: false,
-    //   yarn: false
-    // })
+    this.installDependencies({
+      npm: true,
+      bower: false,
+      yarn: false
+    })
   }
 });
