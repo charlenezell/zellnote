@@ -1,9 +1,0 @@
-{
-  "name": "generator-zw",
-  "dependencies": {
-    "yeoman-generator": "registry:dt/yeoman-generator#1.0.0+20170213213028"
-  },
-  "globalDevDependencies": {
-    "webpack-dev-server": "registry:dt/webpack-dev-server#1.12.1+20170117213337"
-  }
-}
