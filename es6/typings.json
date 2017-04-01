@@ -1,0 +1,6 @@
+{
+  "name": "es6",
+  "dependencies": {
+    "q": "registry:dt/q#1.0.0+20170315012124"
+  }
+}
