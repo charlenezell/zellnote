@@ -1,5 +1,20 @@
 # CRP
 
+<!-- TOC -->
+
+- [CRP](#crp)
+    - [what is CRP](#what-is-crp)
+    - [*OM(DOM/CSSOM)](#omdomcssom)
+    - [stages to see things (Render Tree => Layout => Print)](#stages-to-see-things-render-tree--layout--print)
+    - [Perpose Summary](#perpose-summary)
+    - [Render Blocking CSS (should know about CSS)](#render-blocking-css-should-know-about-css)
+    - [Adding Interactivity with JavaScript](#adding-interactivity-with-javascript)
+    - [”_**You can't optimize what you can't measure.**_“](#_you-cant-optimize-what-you-cant-measure_)
+    - [example](#example)
+    - [summary](#summary)
+
+<!-- /TOC -->
+
 ## what is CRP
 
 Optimizing for performance is all about understanding what happens in these intermediate steps between receiving the HTML, CSS, and JavaScript bytes and the required processing to turn them into rendered pixels - that's the critical rendering path.
@@ -108,6 +123,31 @@ In short, JavaScript introduces a lot of new dependencies **between the DOM, the
 
     ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/waterfall-dom-css-inline-js-inline.png)
 
+    **scriptTag loading machanism**
+
+    ![](http://www.growingwiththeweb.com/images/2014/02/26/legend.svg)
+
+    1. normal
+
+    ![](http://www.growingwiththeweb.com/images/2014/02/26/script.svg)
+
+    1. async
+
+    ![](http://www.growingwiththeweb.com/images/2014/02/26/script-async.svg)
+
+    1. defer
+    
+    downloads the file during HTML parsing and will only execute it after the parser has completed. defer scripts are also guarenteed to execute in the order that they appear in the document.
+
+    ![](http://www.growingwiththeweb.com/images/2014/02/26/script-defer.svg)
+    
+    > Here are some general rules to follow:
+    > - If the script is modular and does not rely on any scripts then use async.
+    > - If the script relies upon or is relied upon by another script then use defer.
+    > - If the script is small and is relied upon by an async script then use an inline script with no attributes placed above the async scripts.
+    >
+    > IE9 and below have some pretty bad bugs in their implementation of defer such that the execution order isn’t guarenteed. If you need to support <= IE9 I recommend not using defer at all and include your scripts with no attribute if the execution order matters. [Read the specifics here](https://github.com/h5bp/lazyweb-requests/issues/42).
+
 1. performance patterns
 
 ![](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/images/analysis-dom.png)
@@ -129,3 +169,15 @@ In short, JavaScript introduces a lot of new dependencies **between the DOM, the
 | ---------------------- | ------------------ | ------------------- |
 | 3                      | 2(parallel js/css) | 11k                 |
 
+## summary
+1. propose 
+
+    **_to elminate CR / CB / CP_**
+
+1. Eliminate render-blocking JavaScript and CSS 
+    1. asynchronous JavaScript resources
+    1. Avoid synchronous server calls
+    1. Avoid long running JavaScript
+    1. Put CSS in the document head
+    1. Avoid CSS imports
+    1. Inline render-blocking CSS
