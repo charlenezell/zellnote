@@ -141,4 +141,9 @@
 ```javascript
 dispatch({type:"SayHello",payload:"mike"});//1.pojo
 dispatch(SayHello("mike"))//2. action creator => prevent repeat typo
+//container component & presentational component seperation
+//let presentational dumb and data driven let binding just hapen in container component
+//dispatch should pass deep in thier child
+//how to deal with wraped dispatch method and normal sync dispatch wrap
+//native dispatcher just reginize pojo, with thunk it has ability to reginize functions
 ```
