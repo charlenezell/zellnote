@@ -53,3 +53,5 @@ import { Switch, Route } from 'react-router'
 
 //而此处只会执行/about首个match的Component
 ```
+
+## 静态路由ssr的方案，redux集成方案

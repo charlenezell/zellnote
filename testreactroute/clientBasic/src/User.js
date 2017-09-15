@@ -1,7 +1,8 @@
 import React from 'react';
 import {
     Link,
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 
 import UserDetail from './UserDetail';
@@ -15,11 +16,21 @@ const List = ({ match }) => {
     }</div>
 }
 
-const User = ({ match }) => <div>
+const User = ({ match,location }) => <div>
 
-    <Route path={`${match.url}`} exact component={List} />
-    <Route path={`${match.url}/:userId`} render={(props)=>{
-        return <UserDetail {...props} parentPath={match.url} />
-    }} />
+    {/* <Switch location={{...location,pathname:"/usesrsf"}}> */}
+    <Switch>
+        <Route path={`${match.url}/1`} render={(props) => {
+            return <UserDetail special={true} {...props} parentPath={match.url} />
+        }} />
+        <Route path={`${match.url}/:userId`} render={(props) => {
+            return <UserDetail {...props} parentPath={match.url} />
+        }} />
+        <Route path={`${match.url}`} component={List} />
+        <Route render={() => {
+            debugger;
+            return <div>no match</div>
+        }} />
+    </Switch>
 </div>
 export default User;
