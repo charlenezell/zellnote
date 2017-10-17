@@ -1,0 +1,25 @@
+{
+  "name": "testwritewebpackplugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "debug":"node --nolazy --inspect-brk=9229 ./node_modules/webpack/bin/webpack.js --progress --bail --env prod --config webpack.config.js",
+    "start": "npm run serve",
+    "trashbuild": "trash ./build/**/*",
+    "build": "npm run trashbuild&& webpack --progress --bail --env prod --config webpack.config.js",
+    "serve": "webpack-dev-server --open --env dev --config webpack.config.js",
+    "copyManifestJSONToTTQ": "cpy ./build/webpack-assets.json C:\\Users\\huangguangyao\\Desktop\\ttqTemp",
+    "genA": "webpack --env prod --progress --profile --json --bail --config webpack.config.js > ./build/stats.json",
+    "showA": "webpack-bundle-analyzer ./build/stats.json",
+    "latestA": "npm run genA&& npm run showA",
+    "help":"webpack -h"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.7.1",
+    "trash-cli": "^1.4.0",
+    "webpack-merge": "^4.1.0"
+  }
+}

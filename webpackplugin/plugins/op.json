@@ -1,0 +1,91 @@
+{
+    "sub.js": {
+        "_source": {
+            "children": [{
+                "children": ["/******/ (function(modules) { // webpackBootstrap\n", {
+                    "_source": {
+                        "_value": " \t// The module cache\n \tvar installedModules = {};\n\n \t// The require function\n \tfunction __webpack_require__(moduleId) {\n\n \t\t// Check if module is in cache\n \t\tif(installedModules[moduleId]) {\n \t\t\treturn installedModules[moduleId].exports;\n \t\t}\n \t\t// Create a new module (and put it into the cache)\n \t\tvar module = installedModules[moduleId] = {\n \t\t\ti: moduleId,\n \t\t\tl: false,\n \t\t\texports: {}\n \t\t};\n\n \t\t// Execute the module function\n \t\tmodules[moduleId].call(module.exports, module, module.exports, __webpack_require__);\n\n \t\t// Flag the module as loaded\n \t\tmodule.l = true;\n\n \t\t// Return the exports of the module\n \t\treturn module.exports;\n \t}\n\n\n \t// expose the modules object (__webpack_modules__)\n \t__webpack_require__.m = modules;\n\n \t// expose the module cache\n \t__webpack_require__.c = installedModules;\n\n \t// define getter function for harmony exports\n \t__webpack_require__.d = function(exports, name, getter) {\n \t\tif(!__webpack_require__.o(exports, name)) {\n \t\t\tObject.defineProperty(exports, name, {\n \t\t\t\tconfigurable: false,\n \t\t\t\tenumerable: true,\n \t\t\t\tget: getter\n \t\t\t});\n \t\t}\n \t};\n\n \t// getDefaultExport function for compatibility with non-harmony modules\n \t__webpack_require__.n = function(module) {\n \t\tvar getter = module && module.__esModule ?\n \t\t\tfunction getDefault() { return module['default']; } :\n \t\t\tfunction getModuleExports() { return module; };\n \t\t__webpack_require__.d(getter, 'a', getter);\n \t\treturn getter;\n \t};\n\n \t// Object.prototype.hasOwnProperty.call\n \t__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };\n\n \t// __webpack_public_path__\n \t__webpack_require__.p = \"\";\n\n \t// Load entry module and return exports\n \treturn __webpack_require__(__webpack_require__.s = 3);\n",
+                        "_name": "webpack/bootstrap 1a70c3b356abafa998e7"
+                    },
+                    "_prefix": "/******/"
+                }, "/******/ })\n", "/************************************************************************/\n", "/******/ (", {
+                    "children": ["[\n", "/* 0 */", "\n", {
+                        "children": ["/***/ (function(module, exports) {\n\n", {
+                            "_source": {
+                                "_source": {
+                                    "_value": "console.log(\"hello\");",
+                                    "_name": "E:\\oldf\\zellnote\\webpackplugin\\src\\lib\\jquery.js"
+                                },
+                                "replacements": []
+                            },
+                            "_cachedMaps": {}
+                        }, "\n\n/***/ })"]
+                    }, ",\n", "/* 1 */", ",\n", "/* 2 */", ",\n", "/* 3 */", "\n", {
+                        "children": ["/***/ (function(module, exports, __webpack_require__) {\n\n", {
+                            "_value": "module.exports = __webpack_require__(4);\n"
+                        }, "\n\n/***/ })"]
+                    }, ",\n", "/* 4 */", "\n", {
+                        "children": ["/***/ (function(module, __webpack_exports__, __webpack_require__) {\n\n", "\"use strict\";\n", {
+                            "_source": {
+                                "_source": {
+                                    "_value": "import \"./lib/jquery.js\";\r\nconsole.log(\"sub\");",
+                                    "_name": "E:\\oldf\\zellnote\\webpackplugin\\src\\sub.js"
+                                },
+                                "replacements": [
+                                    [-10, -11, "Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n", 0],
+                                    [0, 24, "", 1],
+                                    [-1, -2, "/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_jquery_js__ = __webpack_require__(0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_jquery_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__lib_jquery_js__);\n", 2]
+                                ]
+                            },
+                            "_cachedMaps": {}
+                        }, "\n\n/***/ })"]
+                    }, "\n/******/ ]"]
+                }, ")"]
+            }, ";"]
+        },
+        "_cachedMaps": {}
+    },
+    "index.js": {
+        "_source": {
+            "children": [{
+                "children": ["/******/ (function(modules) { // webpackBootstrap\n", {
+                    "_source": {
+                        "_value": " \t// The module cache\n \tvar installedModules = {};\n\n \t// The require function\n \tfunction __webpack_require__(moduleId) {\n\n \t\t// Check if module is in cache\n \t\tif(installedModules[moduleId]) {\n \t\t\treturn installedModules[moduleId].exports;\n \t\t}\n \t\t// Create a new module (and put it into the cache)\n \t\tvar module = installedModules[moduleId] = {\n \t\t\ti: moduleId,\n \t\t\tl: false,\n \t\t\texports: {}\n \t\t};\n\n \t\t// Execute the module function\n \t\tmodules[moduleId].call(module.exports, module, module.exports, __webpack_require__);\n\n \t\t// Flag the module as loaded\n \t\tmodule.l = true;\n\n \t\t// Return the exports of the module\n \t\treturn module.exports;\n \t}\n\n\n \t// expose the modules object (__webpack_modules__)\n \t__webpack_require__.m = modules;\n\n \t// expose the module cache\n \t__webpack_require__.c = installedModules;\n\n \t// define getter function for harmony exports\n \t__webpack_require__.d = function(exports, name, getter) {\n \t\tif(!__webpack_require__.o(exports, name)) {\n \t\t\tObject.defineProperty(exports, name, {\n \t\t\t\tconfigurable: false,\n \t\t\t\tenumerable: true,\n \t\t\t\tget: getter\n \t\t\t});\n \t\t}\n \t};\n\n \t// getDefaultExport function for compatibility with non-harmony modules\n \t__webpack_require__.n = function(module) {\n \t\tvar getter = module && module.__esModule ?\n \t\t\tfunction getDefault() { return module['default']; } :\n \t\t\tfunction getModuleExports() { return module; };\n \t\t__webpack_require__.d(getter, 'a', getter);\n \t\treturn getter;\n \t};\n\n \t// Object.prototype.hasOwnProperty.call\n \t__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };\n\n \t// __webpack_public_path__\n \t__webpack_require__.p = \"\";\n\n \t// Load entry module and return exports\n \treturn __webpack_require__(__webpack_require__.s = 1);\n",
+                        "_name": "webpack/bootstrap 1a70c3b356abafa998e7"
+                    },
+                    "_prefix": "/******/"
+                }, "/******/ })\n", "/************************************************************************/\n", "/******/ (", {
+                    "children": ["[\n", "/* 0 */", "\n", {
+                        "children": ["/***/ (function(module, exports) {\n\n", {
+                            "_source": {
+                                "_value": "console.log(\"hello\");",
+                                "_name": "E:\\oldf\\zellnote\\webpackplugin\\src\\lib\\jquery.js"
+                            },
+                            "replacements": []
+                        }, "\n\n/***/ })"]
+                    }, ",\n", "/* 1 */", "\n", {
+                        "children": ["/***/ (function(module, exports, __webpack_require__) {\n\n", {
+                            "_value": "module.exports = __webpack_require__(2);\n"
+                        }, "\n\n/***/ })"]
+                    }, ",\n", "/* 2 */", "\n", {
+                        "children": ["/***/ (function(module, __webpack_exports__, __webpack_require__) {\n\n", "\"use strict\";\n", {
+                            "_source": {
+                                "_source": {
+                                    "_value": "import \"./lib/jquery.js\";\r\nconsole.log(\"Index\");",
+                                    "_name": "E:\\oldf\\zellnote\\webpackplugin\\src\\index.js"
+                                },
+                                "replacements": [
+                                    [-10, -11, "Object.defineProperty(__webpack_exports__, \"__esModule\", { value: true });\n", 0],
+                                    [0, 24, "", 1],
+                                    [-1, -2, "/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_jquery_js__ = __webpack_require__(0);\n/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_jquery_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__lib_jquery_js__);\n", 2]
+                                ]
+                            },
+                            "_cachedMaps": {}
+                        }, "\n\n/***/ })"]
+                    }, "\n/******/ ]"]
+                }, ")"]
+            }, ";"]
+        },
+        "_cachedMaps": {}
+    }
+}
