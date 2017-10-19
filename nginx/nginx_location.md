@@ -9,7 +9,10 @@
 
 1. 处理对象是decode后的url和处理问相对路径后和合并并列的//为一个/后的标准url
 1. 可以使用的表达表达式类型有
-    1. 前缀 string
+    1. 前缀
+        1. string一般前缀
+        1. =string全等符号
+        1. ^~string不匹配正则符号
     1. 正则
         1. 大小写敏感 ~ regex
         1. 大小写不敏感 ~* regex
@@ -41,8 +44,7 @@
     ```
 1. location direct 可以嵌套
 
-
-
+>**官网文档**
 > Sets configuration depending on a request URI.
 >
 > The matching is performed against a normalized URI, after decoding the text encoded in the “%XX” form, resolving references to relative path components “.” and “..”, and possible compression of two or more adjacent slashes into a single slash.

@@ -1,0 +1,26 @@
+<c:set var="pageInjectStyle">
+    <%=
+    htmlWebpackPlugin.files.css.map(v=>{
+        return `<link rel="stylesheet" href="${v}">`
+    }).join("")
+    %>
+</c:set>
+<c:set var="pageInjectScript">
+    <%=
+    htmlWebpackPlugin.files.js.map(v=>{
+        return `<script src="${v}"></script>`
+    }).join("")
+    %>
+</c:set>
+<%
+/*
+`dataShape:
+htmlWebpackPlugin:
+ ${JSON.stringify(htmlWebpackPlugin,null,'\t') }
+webpack:
+ ${JSON.stringify(webpack,null,'\t')}
+webpackConfig:
+ ${JSON.stringify(webpackConfig,null,'\t') }
+`
+*/
+%>
