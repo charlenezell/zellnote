@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 // const InlineChunkManifestHtmlWebpackPlugin = require('inline-chunk-manifest-html-webpack-plugin');
 // const ChunkManifestPlugin = require('chunk-manifest-webpack-plugin');
+console.log("process.env.NODE_ENV",process.env.NODE_ENV);
 var HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
 // const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 // const AutoDllPlugin = require('autodll-webpack-plugin');
