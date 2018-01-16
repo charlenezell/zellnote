@@ -2,6 +2,7 @@
   "dependencies": {},
   "globalDependencies": {
     "core-js": "registry:dt/core-js#0.9.7+20161130133742",
+    "mocha": "registry:dt/mocha#2.2.5+20170311011848",
     "node": "registry:dt/node#6.0.0+20161110151007",
     "open": "registry:dt/open#0.0.3+20160316155526",
     "through2": "registry:dt/through2#2.0.0+20160317120654"
@@ -9,6 +10,8 @@
   "globalDevDependencies": {
     "handlebars": "registry:dt/handlebars#4.0.5+20160810231743",
     "jquery": "registry:dt/jquery#1.10.0+20170123093700",
+    "mocha": "registry:dt/mocha#2.2.5+20170311011848",
+    "should": "registry:dt/should#8.1.1+20160726191732",
     "webpack-dev-server": "registry:dt/webpack-dev-server#1.12.1+20170117213337"
   }
 }

@@ -1,0 +1,29 @@
+body,html,#root{
+  height:100%;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+}
+.App{
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.content{
+  border-left:1px solid;
+}
+@keyframes rotate{
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.move{
+  animation:rotate infinite 1000ms;
+}
+.select{
+  border:1px dashed blue;
+}
